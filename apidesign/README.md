@@ -47,15 +47,15 @@ $ nest g controller reports
 
 ## `Design Documentation`
 
-**Note:** Numbers are related, with 5 routes needed.
+**Note:** Numbered request, and Body/Query String data content
 
 ### **`Method and Route:`**
 
-1.  POST `/auth/signup`
-2.  POST `/auth/signin`
-3.  GET  `/reports`
-4.  POST `/reports`
-5.  PATCH `/reports/:id`
+1.  POST `/auth/signup` - Create a new user and sign-in
+2.  POST `/auth/signin` - Sign in as an existing user
+3.  GET  `/reports` - Get an estimate for the cars value
+4.  POST `/reports` - Report how much a vehicle sold for
+5.  PATCH `/reports/:id` - Approve or reject a report submitted by a user
 
 ### **`Body or Query String:`**
 
@@ -65,14 +65,6 @@ $ nest g controller reports
 4.  Body - { make, model, year, mileage, longitude, latitude, price }
 5.  Body - { approved }
 
-### **`Description:`**
-
-1.  Create a new user and sign-in
-2.  Sign in as an existing user
-3.  Get an estimate for the cars value
-4.  Report how much a vehicle sold for
-5.  Approve or reject a report submitted by a user
-<br>
 
 # `Modules`
 
